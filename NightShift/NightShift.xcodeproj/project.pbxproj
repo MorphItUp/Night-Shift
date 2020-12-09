@@ -3,24 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		89242E05257FC64500E327FC /* TodayPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89242E04257FC64500E327FC /* TodayPage.swift */; };
+		89242E05257FC64500E327FC /* ExplorePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89242E04257FC64500E327FC /* ExplorePage.swift */; };
 		89242E0A257FC65D00E327FC /* GamesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89242E09257FC65D00E327FC /* GamesPage.swift */; };
 		89242E0F257FC66500E327FC /* ArcadePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89242E0E257FC66500E327FC /* ArcadePage.swift */; };
 		89242E14257FC67400E327FC /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89242E13257FC67400E327FC /* SearchPage.swift */; };
 		89242E19257FC67C00E327FC /* TabBarPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89242E18257FC67C00E327FC /* TabBarPage.swift */; };
 		8954DC9C257ED71C00D58093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8954DC9B257ED71C00D58093 /* AppDelegate.swift */; };
 		8954DC9E257ED71C00D58093 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8954DC9D257ED71C00D58093 /* SceneDelegate.swift */; };
-		8954DCA0257ED71C00D58093 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8954DC9F257ED71C00D58093 /* ContentView.swift */; };
 		8954DCA3257ED71C00D58093 /* NightShift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8954DCA1257ED71C00D58093 /* NightShift.xcdatamodeld */; };
 		8954DCA5257ED71F00D58093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8954DCA4257ED71F00D58093 /* Assets.xcassets */; };
 		8954DCA8257ED71F00D58093 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8954DCA7257ED71F00D58093 /* Preview Assets.xcassets */; };
 		8954DCAB257ED71F00D58093 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8954DCA9257ED71F00D58093 /* LaunchScreen.storyboard */; };
 		8954DCB6257ED71F00D58093 /* NightShiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8954DCB5257ED71F00D58093 /* NightShiftTests.swift */; };
 		8954DCC1257ED72000D58093 /* NightShiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8954DCC0257ED72000D58093 /* NightShiftUITests.swift */; };
+		89EB1EC82580C47600D6056A /* HorizontalScrollPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EB1EC72580C47600D6056A /* HorizontalScrollPage.swift */; };
+		89EB1ECE2580D38100D6056A /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = 89EB1ECD2580D38100D6056A /* SwiftUIPager */; };
+		89EB1ED42580D47700D6056A /* Pages in Frameworks */ = {isa = PBXBuildFile; productRef = 89EB1ED32580D47700D6056A /* Pages */; };
+		89F354AB2580BA130015C41A /* FeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F354AA2580BA130015C41A /* FeaturedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		89242E04257FC64500E327FC /* TodayPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayPage.swift; sourceTree = "<group>"; };
+		89242E04257FC64500E327FC /* ExplorePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePage.swift; sourceTree = "<group>"; };
 		89242E09257FC65D00E327FC /* GamesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesPage.swift; sourceTree = "<group>"; };
 		89242E0E257FC66500E327FC /* ArcadePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadePage.swift; sourceTree = "<group>"; };
 		89242E13257FC67400E327FC /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
@@ -49,7 +52,6 @@
 		8954DC98257ED71C00D58093 /* NightShift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NightShift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8954DC9B257ED71C00D58093 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		8954DC9D257ED71C00D58093 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8954DC9F257ED71C00D58093 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8954DCA2257ED71C00D58093 /* NightShift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NightShift.xcdatamodel; sourceTree = "<group>"; };
 		8954DCA4257ED71F00D58093 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8954DCA7257ED71F00D58093 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -61,6 +63,8 @@
 		8954DCBC257ED72000D58093 /* NightShiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NightShiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8954DCC0257ED72000D58093 /* NightShiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightShiftUITests.swift; sourceTree = "<group>"; };
 		8954DCC2257ED72000D58093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89EB1EC72580C47600D6056A /* HorizontalScrollPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollPage.swift; sourceTree = "<group>"; };
+		89F354AA2580BA130015C41A /* FeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89EB1ECE2580D38100D6056A /* SwiftUIPager in Frameworks */,
+				89EB1ED42580D47700D6056A /* Pages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,11 +118,12 @@
 			isa = PBXGroup;
 			children = (
 				8954DCD1257ED7B200D58093 /* Delegates */,
-				8954DC9F257ED71C00D58093 /* ContentView.swift */,
-				89242E04257FC64500E327FC /* TodayPage.swift */,
+				89242E04257FC64500E327FC /* ExplorePage.swift */,
 				89242E0E257FC66500E327FC /* ArcadePage.swift */,
 				89242E13257FC67400E327FC /* SearchPage.swift */,
+				89F354AA2580BA130015C41A /* FeaturedView.swift */,
 				89242E09257FC65D00E327FC /* GamesPage.swift */,
+				89EB1EC72580C47600D6056A /* HorizontalScrollPage.swift */,
 				89242E18257FC67C00E327FC /* TabBarPage.swift */,
 				8954DCA4257ED71F00D58093 /* Assets.xcassets */,
 				8954DCA9257ED71F00D58093 /* LaunchScreen.storyboard */,
@@ -178,6 +185,10 @@
 			dependencies = (
 			);
 			name = NightShift;
+			packageProductDependencies = (
+				89EB1ECD2580D38100D6056A /* SwiftUIPager */,
+				89EB1ED32580D47700D6056A /* Pages */,
+			);
 			productName = NightShift;
 			productReference = 8954DC98257ED71C00D58093 /* NightShift.app */;
 			productType = "com.apple.product-type.application";
@@ -249,6 +260,10 @@
 				Base,
 			);
 			mainGroup = 8954DC8F257ED71C00D58093;
+			packageReferences = (
+				89EB1ECC2580D38100D6056A /* XCRemoteSwiftPackageReference "SwiftUIPager" */,
+				89EB1ED22580D47700D6056A /* XCRemoteSwiftPackageReference "Pages" */,
+			);
 			productRefGroup = 8954DC99257ED71C00D58093 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -292,13 +307,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89F354AB2580BA130015C41A /* FeaturedView.swift in Sources */,
 				8954DC9C257ED71C00D58093 /* AppDelegate.swift in Sources */,
 				8954DC9E257ED71C00D58093 /* SceneDelegate.swift in Sources */,
-				8954DCA0257ED71C00D58093 /* ContentView.swift in Sources */,
-				89242E05257FC64500E327FC /* TodayPage.swift in Sources */,
+				89242E05257FC64500E327FC /* ExplorePage.swift in Sources */,
 				89242E0A257FC65D00E327FC /* GamesPage.swift in Sources */,
 				89242E0F257FC66500E327FC /* ArcadePage.swift in Sources */,
 				89242E19257FC67C00E327FC /* TabBarPage.swift in Sources */,
+				89EB1EC82580C47600D6056A /* HorizontalScrollPage.swift in Sources */,
 				89242E14257FC67400E327FC /* SearchPage.swift in Sources */,
 				8954DCA3257ED71C00D58093 /* NightShift.xcdatamodeld in Sources */,
 			);
@@ -631,6 +647,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		89EB1ECC2580D38100D6056A /* XCRemoteSwiftPackageReference "SwiftUIPager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fermoya/SwiftUIPager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.14.0;
+			};
+		};
+		89EB1ED22580D47700D6056A /* XCRemoteSwiftPackageReference "Pages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nachonavarro/Pages";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		89EB1ECD2580D38100D6056A /* SwiftUIPager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89EB1ECC2580D38100D6056A /* XCRemoteSwiftPackageReference "SwiftUIPager" */;
+			productName = SwiftUIPager;
+		};
+		89EB1ED32580D47700D6056A /* Pages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89EB1ED22580D47700D6056A /* XCRemoteSwiftPackageReference "Pages" */;
+			productName = Pages;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		8954DCA1257ED71C00D58093 /* NightShift.xcdatamodeld */ = {

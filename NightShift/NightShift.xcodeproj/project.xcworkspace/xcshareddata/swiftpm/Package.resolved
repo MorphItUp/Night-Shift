@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Pages",
+        "repositoryURL": "https://github.com/nachonavarro/Pages",
+        "state": {
+          "branch": null,
+          "revision": "4cdbe4ff2f9ddbfda8cf0376a2acb678a1a0a0a2",
+          "version": "0.1.5"
+        }
+      },
+      {
+        "package": "SwiftUIPager",
+        "repositoryURL": "https://github.com/fermoya/SwiftUIPager.git",
+        "state": {
+          "branch": null,
+          "revision": "dd9d133eb2659acba70235266cf0d5920c8d5a90",
+          "version": "1.14.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -15,20 +15,20 @@ struct TabBarView: View {
         
         TabView(selection: $selected) {
                     
-            TodayView().tabItem {
-                Text("Today")
+            ExploreView().tabItem {
+                Text("Explore")
             }
             
             GamesView().tabItem {
-                Text("Games")
+                Text("Community")
             }
             
             ArcadeView().tabItem {
-                Text("Arcade")
+                Text("Collections")
             }
             
             SearchView().tabItem {
-                Text("Search")
+                Text("Favorites")
             }
             
         }
