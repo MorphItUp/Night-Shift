@@ -20,28 +20,28 @@ struct ExploreView: View {
                 
                 VStack(alignment: .leading) {
                     
-                    //                HStack {
-                    //
-                    //                    VStack(alignment: .leading) {
-                    //                        Text("TUESDAY 8 DECEMBER").foregroundColor(.gray).bold().font(.caption)
-                    //                        Text("Today").font(.title).bold()
-                    //                    }
-                    //                    Spacer()
-                    //                    Button(action: navigateToProfile, label: {
-                    //                        Image("Profile").resizable().frame(width: 40, height: 40, alignment: .trailing)
-                    //                    })
-                    //
-                    //
-                    //                }.padding([.leading, .trailing])
+//                    HStack {
+//
+//                        VStack(alignment: .leading) {
+//                            Text("TUESDAY 8 DECEMBER").foregroundColor(.gray).bold().font(.caption)
+//                            Text("Today").font(.title).bold()
+//                        }
+//                        Spacer()
+//                        Button(action: navigateToProfile, label: {
+//                            Image("Profile").resizable().frame(width: 40, height: 40, alignment: .trailing)
+//                        })
+//
+//
+//                    }.padding([.leading, .trailing])
                     
                     
                     
                     
-                    HighlightView(category: "Nature", title: "Desert", message: "Some descriptive text about deserts").frame(height: 500, alignment: .leading)
+                    HighlightView(category: "Nature", title: "Desert", message: "Some descriptive text about deserts").frame(height: 500)
                     
-                    HighlightView(category: "Nature", title: "Desert", message: "Some descriptive text about deserts").frame(height: 500, alignment: .leading)
+                    HighlightView(category: "Nature", title: "Desert", message: "Some descriptive text about deserts").frame(height: 500)
                     
-                    HighlightView(category: "Nature", title: "Desert", message: "Some descriptive text about deserts").frame(height: 500, alignment: .leading)
+                    HighlightView(category: "Nature", title: "Desert", message: "Some descriptive text about deserts").frame(height: 500)
                 }
                 
                 
@@ -50,6 +50,10 @@ struct ExploreView: View {
             .navigationBarTitle("Explore", displayMode: .large)
         }
         
+        
+    }
+    
+    func navigateToProfile() {
         
     }
     
@@ -103,22 +107,36 @@ struct HighlightView: View {
     var title: String
     var message: String
     
+    @State var presentingModal = false
+    
     var body: some View {
         
+        
         VStack {
-            
-            ZStack {
-                Image("wallpaper").resizable()
-                LinearGradient(gradient: Gradient(colors: [.clear, Color.black.opacity(0.5)]), startPoint: .top, endPoint: .bottom)
+            Button(action: {
                 
-                VStack(alignment: .leading) {
-                    Text(category).foregroundColor(Color.white.opacity(0.6)).bold()
-                    Text(title).foregroundColor(.white).font(.title)
-                    Spacer()
-                    Text(message).foregroundColor(.white)
-                }.padding()
+                self.presentingModal = true
                 
+                
+            }, label: {
+                
+                ZStack {
+                    Image("wallpaper").resizable()
+                    LinearGradient(gradient: Gradient(colors: [.clear, Color.black.opacity(0.5)]), startPoint: .top, endPoint: .bottom)
+                    
+                    VStack(alignment: .leading) {
+                        Text(category).foregroundColor(Color.white.opacity(0.6)).bold()
+                        Text(title).foregroundColor(.white).font(.title)
+                        Spacer()
+                        Text(message).foregroundColor(.white)
+                    }.padding()
+                    
+                }
+            })
+            .sheet(isPresented: $presentingModal) {
+                WallpaperDetails()
             }
+            
             
         }
         .cornerRadius(30)

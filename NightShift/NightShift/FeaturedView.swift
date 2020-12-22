@@ -29,6 +29,7 @@ struct FeaturedView: View {
         
     }
     
+    
 }
 
 
@@ -36,7 +37,7 @@ struct FeaturedView_Previews: PreviewProvider {
     
     static var previews: some View {
         Group {
-            FeaturedView(captionText: "New Update", titleText: "The Sims Freeplay", subtitleText: "Bonjour from Paris", image: "wallpaper2")
+            FeaturedView(captionText: "New Update", titleText: "The Sims Freeplay", subtitleText: "Bonjour from Paris", image: "wallpaper_black4")
         }
     }
     

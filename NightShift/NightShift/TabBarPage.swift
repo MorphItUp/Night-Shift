@@ -23,7 +23,7 @@ struct TabBarView: View {
                 Text("Community")
             }
             
-            ArcadeView().tabItem {
+            CollectionsView().tabItem {
                 Text("Collections")
             }
             

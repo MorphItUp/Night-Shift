@@ -36,10 +36,10 @@ struct GamesView: View {
               
                 Pages(currentPage: $currentPage, hasControl: false) {
                         
-                        FeaturedView(captionText: "New Update", titleText: "The Sims Freeplay", subtitleText: "Bonjour from Paris", image: "wallpaper2")
-                        FeaturedView(captionText: "New Update", titleText: "The Sims Freeplay", subtitleText: "Bonjour from Paris", image: "wallpaper2")
-                        FeaturedView(captionText: "New Update", titleText: "The Sims Freeplay", subtitleText: "Bonjour from Paris", image: "wallpaper2")
-                        FeaturedView(captionText: "New Update", titleText: "The Sims Freeplay", subtitleText: "Bonjour from Paris", image: "wallpaper2")
+                        FeaturedView(captionText: "New Update", titleText: "The Sims Freeplay", subtitleText: "Bonjour from Paris", image: "wallpaper_black4")
+                        FeaturedView(captionText: "New Update", titleText: "The Sims Freeplay", subtitleText: "Bonjour from Paris", image: "wallpaper_black4")
+                        FeaturedView(captionText: "New Update", titleText: "The Sims Freeplay", subtitleText: "Bonjour from Paris", image: "wallpaper_black4")
+                        FeaturedView(captionText: "New Update", titleText: "The Sims Freeplay", subtitleText: "Bonjour from Paris", image: "wallpaper_black4")
                     
                 }.frame(height: 330, alignment: .center)
                 

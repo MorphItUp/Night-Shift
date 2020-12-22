@@ -63,6 +63,10 @@ extension CardTransitionManager: UIViewControllerAnimatedTransitioning {
         containerView.subviews.forEach({ $0.removeFromSuperview() })
         addBackgroundViews(to: containerView)
         
+        let fromView = transitionContext.viewController(forKey: .from)
+        let toView = transitionContext.viewController(forKey: .to)
+        
+//        let cardView = (transition == .presentation) ? (fromView as! TodayView)
         
         
         transitionContext.completeTransition(true)
