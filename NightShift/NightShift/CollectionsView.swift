@@ -48,14 +48,15 @@ struct SingleCollectionView: View {
             Image(image)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(maxWidth: 370, maxHeight: 500)
+                .frame(maxWidth: UIScreen.main.bounds.width * 0.93, maxHeight: 500)
                 .cornerRadius(30)
-                .padding([.leading, .trailing])
-                .padding([.bottom, .top], 20)
+//                .padding([.leading, .trailing])
+//                .padding([.bottom, .top], 1)
              
-                .shadow(radius: 10)
+//                .shadow(radius: 5)
+                .shadow(color: .black, radius: 9, x: 1, y: 3)
                 
-        }
+        }.padding(25)
         
     }
     
@@ -83,9 +84,6 @@ struct CollectionPages: View {
                 
             Pages(currentPage: $currentPage, hasControl: false) {
                 
-                
-                
-                    
                 SingleCollectionView(image: "wallpaper_black1")
                 SingleCollectionView(image: "wallpaper_black2")
                 SingleCollectionView(image: "wallpaper_black3")
@@ -93,8 +91,6 @@ struct CollectionPages: View {
                 SingleCollectionView(image: "wallpaper_red2")
                 SingleCollectionView(image: "wallpaper_red3")
                 
-              
-              
                 
             }.frame(height: 500, alignment: .center)
             

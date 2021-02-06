@@ -23,29 +23,29 @@ struct ExploreView: View {
                 
                 VStack(alignment: .leading) {
                     
-//                    HStack {
-//
-//                        VStack(alignment: .leading) {
-//                            Text("TUESDAY 8 DECEMBER").foregroundColor(.gray).bold().font(.caption)
-//                            Text("Today").font(.title).bold()
-//                        }
-//                        Spacer()
-//                        Button(action: navigateToProfile, label: {
-//                            Image("Profile").resizable().frame(width: 40, height: 40, alignment: .trailing)
-//                        })
-//
-//
-//                    }.padding([.leading, .trailing])
+                    //                    HStack {
+                    //
+                    //                        VStack(alignment: .leading) {
+                    //                            Text("TUESDAY 8 DECEMBER").foregroundColor(.gray).bold().font(.caption)
+                    //                            Text("Today").font(.title).bold()
+                    //                        }
+                    //                        Spacer()
+                    //                        Button(action: navigateToProfile, label: {
+                    //                            Image("Profile").resizable().frame(width: 40, height: 40, alignment: .trailing)
+                    //                        })
+                    //
+                    //
+                    //                    }.padding([.leading, .trailing])
                     
                     
                     
                     
-                    HighlightView(category: "Nature", title: "Desert", message: "Some descriptive text about deserts").frame(height: 500)
+                    WallpaperView(category: "Nature", title: "Desert", description: "Some descriptive text about deserts").frame(height: 500)
                     
-                    HighlightView(category: "Nature", title: "Desert", message: "Some descriptive text about deserts").frame(height: 500)
+                    WallpaperView(category: "Nature", title: "Desert", description: "Some descriptive text about deserts").frame(height: 500)
                     
-                    HighlightView(category: "Nature", title: "Desert", message: "Some descriptive text about deserts").frame(height: 500)
-                        
+                    WallpaperView(category: "Nature", title: "Desert", description: "Some descriptive text about deserts").frame(height: 500)
+                    
                 }
                 
                 
@@ -94,7 +94,7 @@ struct NavigationBarItems: View {
                 Image("Profile")
                     .resizable()
                     .frame(width: 40, height: 40, alignment: .trailing)
-                    
+                
             })
             
             
@@ -108,11 +108,11 @@ struct NavigationBarItems: View {
 }
 
 
-struct HighlightView: View {
+struct WallpaperView: View {
     
     var category: String
     var title: String
-    var message: String
+    var description: String
     
     @State var presentingModal = false
     
@@ -123,7 +123,7 @@ struct HighlightView: View {
         
         VStack {
             Button(action: {
-
+                
                 self.presentingModal = true
                 
                 scale.toggle()
@@ -134,14 +134,16 @@ struct HighlightView: View {
                 ZStack {
                     ImageView()
                     LinearGradient(gradient: Gradient(colors: [.clear, Color.black.opacity(0.5)]), startPoint: .top, endPoint: .bottom)
-
+                    
                     VStack(alignment: .leading) {
+                        
                         Text(category).foregroundColor(Color.white.opacity(0.6)).bold()
                         Text(title).foregroundColor(.white).font(.title)
                         Spacer()
-                        Text(message).foregroundColor(.white)
+                        Text(description).foregroundColor(.white)
+                        
                     }.padding()
-
+                    
                 }
                 
                 
@@ -149,20 +151,13 @@ struct HighlightView: View {
             )
             .sheet(isPresented: $presentingModal) {
                 WallpaperDetails()
-                    
-                    
             }
-            .transition(.scale)
-            
-            
         }
         .cornerRadius(30)
         .shadow(radius: 10)
         .padding([.leading,.trailing]).padding([.bottom],10)
         
-        
     }
-    
     
 }
 
@@ -176,8 +171,6 @@ struct ImageView: View {
             .aspectRatio(contentMode: .fill)
             .frame(maxWidth: 300, maxHeight: 500)
     }
-    
-    
     
 }
 
