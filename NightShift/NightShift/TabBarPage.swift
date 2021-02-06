@@ -19,7 +19,7 @@ struct TabBarView: View {
                 Text("Explore")
             }
             
-            GamesView().tabItem {
+            CommunityView().tabItem {
                 Text("Community")
             }
             

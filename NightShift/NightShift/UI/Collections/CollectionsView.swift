@@ -50,13 +50,11 @@ struct SingleCollectionView: View {
                 .aspectRatio(contentMode: .fill)
                 .frame(maxWidth: UIScreen.main.bounds.width * 0.93, maxHeight: 500)
                 .cornerRadius(30)
-//                .padding([.leading, .trailing])
-//                .padding([.bottom, .top], 1)
-             
-//                .shadow(radius: 5)
-                .shadow(color: .black, radius: 9, x: 1, y: 3)
+                .shadow(color: .gray, radius: 7, x: 1, y: 3)
                 
-        }.padding(25)
+        }
+        .padding(20)
+        .padding([.bottom, .top], 15)
         
     }
     

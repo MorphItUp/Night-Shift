@@ -22,6 +22,7 @@
 		8954DCB6257ED71F00D58093 /* NightShiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8954DCB5257ED71F00D58093 /* NightShiftTests.swift */; };
 		8954DCC1257ED72000D58093 /* NightShiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8954DCC0257ED72000D58093 /* NightShiftUITests.swift */; };
 		89690D8B25CF10B900577D31 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89690D8A25CF10B900577D31 /* CommunityView.swift */; };
+		89ABB3DE25CF1D0300295261 /* WallpaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ABB3DD25CF1D0300295261 /* WallpaperView.swift */; };
 		89B0866025C74A3400913045 /* CardPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B0865F25C74A3400913045 /* CardPresentationController.swift */; };
 		89B0866725C74B0D00913045 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B0866625C74B0D00913045 /* UIView+Extension.swift */; };
 		89C9646A25816AE100FAB318 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C9646925816AE100FAB318 /* CardView.swift */; };
@@ -72,6 +73,7 @@
 		8954DCC0257ED72000D58093 /* NightShiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightShiftUITests.swift; sourceTree = "<group>"; };
 		8954DCC2257ED72000D58093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89690D8A25CF10B900577D31 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		89ABB3DD25CF1D0300295261 /* WallpaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperView.swift; sourceTree = "<group>"; };
 		89B0865F25C74A3400913045 /* CardPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresentationController.swift; sourceTree = "<group>"; };
 		89B0866625C74B0D00913045 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		89C9646925816AE100FAB318 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -137,9 +139,6 @@
 				89C964712581FFF900FAB318 /* Transitions */,
 				89C9647A2582089800FAB318 /* View Controller */,
 				89C9646825816A4D00FAB318 /* Custom Views */,
-				89242E04257FC64500E327FC /* ExploreView.swift */,
-				8935F5E52592610600BF939E /* WallpaperDetails.swift */,
-				89242E0E257FC66500E327FC /* CollectionsView.swift */,
 				89242E13257FC67400E327FC /* SearchPage.swift */,
 				89F354AA2580BA130015C41A /* FeaturedView.swift */,
 				89242E09257FC65D00E327FC /* GamesPage.swift */,
@@ -189,7 +188,15 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
-		89690D8625CF106400577D31 /* Favorites */ = {
+		898BDF8125CF1B3400766AAF /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				89242E04257FC64500E327FC /* ExploreView.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		898BDF8225CF1B3E00766AAF /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -199,19 +206,14 @@
 		89A5696525CEFBED00008490 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				89690D8625CF106400577D31 /* Favorites */,
-				89A5696825CEFC0200008490 /* Collections */,
-				89A5696625CEFBF500008490 /* Explore */,
+				89ABB3DC25CF1CEE00295261 /* Components */,
+				898BDF8125CF1B3400766AAF /* Explore */,
 				89A5696725CEFBFB00008490 /* Community */,
+				89ABB3DA25CF1BAF00295261 /* Collections */,
+				898BDF8225CF1B3E00766AAF /* Favorites */,
+				89ABB3DB25CF1C6800295261 /* Wallpaper Details */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		89A5696625CEFBF500008490 /* Explore */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Explore;
 			sourceTree = "<group>";
 		};
 		89A5696725CEFBFB00008490 /* Community */ = {
@@ -222,11 +224,28 @@
 			path = Community;
 			sourceTree = "<group>";
 		};
-		89A5696825CEFC0200008490 /* Collections */ = {
+		89ABB3DA25CF1BAF00295261 /* Collections */ = {
 			isa = PBXGroup;
 			children = (
+				89242E0E257FC66500E327FC /* CollectionsView.swift */,
 			);
 			path = Collections;
+			sourceTree = "<group>";
+		};
+		89ABB3DB25CF1C6800295261 /* Wallpaper Details */ = {
+			isa = PBXGroup;
+			children = (
+				8935F5E52592610600BF939E /* WallpaperDetails.swift */,
+			);
+			path = "Wallpaper Details";
+			sourceTree = "<group>";
+		};
+		89ABB3DC25CF1CEE00295261 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				89ABB3DD25CF1D0300295261 /* WallpaperView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		89B0866425C74AF900913045 /* Common */ = {
@@ -417,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89F354AB2580BA130015C41A /* FeaturedView.swift in Sources */,
+				89ABB3DE25CF1D0300295261 /* WallpaperView.swift in Sources */,
 				8954DC9C257ED71C00D58093 /* AppDelegate.swift in Sources */,
 				89B0866725C74B0D00913045 /* UIView+Extension.swift in Sources */,
 				8954DC9E257ED71C00D58093 /* SceneDelegate.swift in Sources */,
