@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ExploreView: View {
+    
+    @State var scale = false
+    
     var body: some View {
         
         
@@ -42,6 +45,7 @@ struct ExploreView: View {
                     HighlightView(category: "Nature", title: "Desert", message: "Some descriptive text about deserts").frame(height: 500)
                     
                     HighlightView(category: "Nature", title: "Desert", message: "Some descriptive text about deserts").frame(height: 500)
+                        
                 }
                 
                 
@@ -87,7 +91,10 @@ struct NavigationBarItems: View {
             }
             Spacer()
             Button(action: navigateToProfile, label: {
-                Image("Profile").resizable().frame(width: 40, height: 40, alignment: .trailing)
+                Image("Profile")
+                    .resizable()
+                    .frame(width: 40, height: 40, alignment: .trailing)
+                    
             })
             
             
@@ -109,33 +116,43 @@ struct HighlightView: View {
     
     @State var presentingModal = false
     
+    @State var scale = false
+    
     var body: some View {
         
         
         VStack {
             Button(action: {
-                
+
                 self.presentingModal = true
+                
+                scale.toggle()
                 
                 
             }, label: {
                 
                 ZStack {
-                    Image("wallpaper").resizable()
+                    ImageView()
                     LinearGradient(gradient: Gradient(colors: [.clear, Color.black.opacity(0.5)]), startPoint: .top, endPoint: .bottom)
-                    
+
                     VStack(alignment: .leading) {
                         Text(category).foregroundColor(Color.white.opacity(0.6)).bold()
                         Text(title).foregroundColor(.white).font(.title)
                         Spacer()
                         Text(message).foregroundColor(.white)
                     }.padding()
-                    
+
                 }
-            })
+                
+                
+            }
+            )
             .sheet(isPresented: $presentingModal) {
                 WallpaperDetails()
+                    
+                    
             }
+            .transition(.scale)
             
             
         }
@@ -143,7 +160,23 @@ struct HighlightView: View {
         .shadow(radius: 10)
         .padding([.leading,.trailing]).padding([.bottom],10)
         
+        
     }
+    
+    
+}
+
+
+struct ImageView: View {
+    
+    var body: some View {
+        
+        Image("wallpaper_red1")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(maxWidth: 300, maxHeight: 500)
+    }
+    
     
     
 }

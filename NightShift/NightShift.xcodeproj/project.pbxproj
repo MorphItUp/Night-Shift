@@ -21,6 +21,8 @@
 		8954DCAB257ED71F00D58093 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8954DCA9257ED71F00D58093 /* LaunchScreen.storyboard */; };
 		8954DCB6257ED71F00D58093 /* NightShiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8954DCB5257ED71F00D58093 /* NightShiftTests.swift */; };
 		8954DCC1257ED72000D58093 /* NightShiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8954DCC0257ED72000D58093 /* NightShiftUITests.swift */; };
+		89B0866025C74A3400913045 /* CardPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B0865F25C74A3400913045 /* CardPresentationController.swift */; };
+		89B0866725C74B0D00913045 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B0866625C74B0D00913045 /* UIView+Extension.swift */; };
 		89C9646A25816AE100FAB318 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C9646925816AE100FAB318 /* CardView.swift */; };
 		89C964732582001300FAB318 /* CardTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C964722582001300FAB318 /* CardTransitionManager.swift */; };
 		89C9647D258208BE00FAB318 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C9647C258208BE00FAB318 /* TodayView.swift */; };
@@ -68,6 +70,8 @@
 		8954DCBC257ED72000D58093 /* NightShiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NightShiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8954DCC0257ED72000D58093 /* NightShiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightShiftUITests.swift; sourceTree = "<group>"; };
 		8954DCC2257ED72000D58093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89B0865F25C74A3400913045 /* CardPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresentationController.swift; sourceTree = "<group>"; };
+		89B0866625C74B0D00913045 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		89C9646925816AE100FAB318 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		89C964722582001300FAB318 /* CardTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransitionManager.swift; sourceTree = "<group>"; };
 		89C9647C258208BE00FAB318 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 		8954DC9A257ED71C00D58093 /* NightShift */ = {
 			isa = PBXGroup;
 			children = (
+				89A5696525CEFBED00008490 /* UI */,
+				89B0866425C74AF900913045 /* Common */,
 				8954DCD1257ED7B200D58093 /* Delegates */,
 				89C964712581FFF900FAB318 /* Transitions */,
 				89C9647A2582089800FAB318 /* View Controller */,
@@ -181,6 +187,53 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
+		89A5696525CEFBED00008490 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				89A5696825CEFC0200008490 /* New Group */,
+				89A5696625CEFBF500008490 /* Explore */,
+				89A5696725CEFBFB00008490 /* Community */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		89A5696625CEFBF500008490 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		89A5696725CEFBFB00008490 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		89A5696825CEFC0200008490 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		89B0866425C74AF900913045 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				89B0866525C74AFE00913045 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		89B0866525C74AFE00913045 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				89B0866625C74B0D00913045 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		89C9646825816A4D00FAB318 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				89C964722582001300FAB318 /* CardTransitionManager.swift */,
+				89B0865F25C74A3400913045 /* CardPresentationController.swift */,
 			);
 			path = Transitions;
 			sourceTree = "<group>";
@@ -353,6 +407,7 @@
 			files = (
 				89F354AB2580BA130015C41A /* FeaturedView.swift in Sources */,
 				8954DC9C257ED71C00D58093 /* AppDelegate.swift in Sources */,
+				89B0866725C74B0D00913045 /* UIView+Extension.swift in Sources */,
 				8954DC9E257ED71C00D58093 /* SceneDelegate.swift in Sources */,
 				89242E05257FC64500E327FC /* ExplorePage.swift in Sources */,
 				89242E0A257FC65D00E327FC /* GamesPage.swift in Sources */,
@@ -363,6 +418,7 @@
 				89EB1EC82580C47600D6056A /* HorizontalScrollPage.swift in Sources */,
 				89242E14257FC67400E327FC /* SearchPage.swift in Sources */,
 				8935F5E62592610600BF939E /* WallpaperDetails.swift in Sources */,
+				89B0866025C74A3400913045 /* CardPresentationController.swift in Sources */,
 				89C9646A25816AE100FAB318 /* CardView.swift in Sources */,
 				8954DCA3257ED71C00D58093 /* NightShift.xcdatamodeld in Sources */,
 			);

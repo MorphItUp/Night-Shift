@@ -15,13 +15,13 @@ struct CollectionsView: View {
         NavigationView {
             
             ScrollView {
-                
+
                 Divider().padding([.leading, .trailing], 10).padding([.bottom], 20)
-                
+
                 CollectionPages(category: "Black")
                 CollectionPages(category: "White")
                 CollectionPages(category: "Red")
-                
+
             }
             
             .navigationBarTitle("Collections", displayMode: .large)
@@ -47,10 +47,14 @@ struct SingleCollectionView: View {
         VStack(alignment: .leading) {
             Image(image)
                 .resizable()
-//                .frame(height: 500, alignment: .center)
-                .cornerRadius(10)
-                .padding([.leading, .trailing], 5)
-                .aspectRatio(contentMode: .fit)
+                .aspectRatio(contentMode: .fill)
+                .frame(maxWidth: 370, maxHeight: 500)
+                .cornerRadius(30)
+                .padding([.leading, .trailing])
+                .padding([.bottom, .top], 20)
+             
+                .shadow(radius: 10)
+                
         }
         
     }
@@ -77,7 +81,6 @@ struct CollectionPages: View {
                 .padding([.leading, .trailing])
                 .padding([.top], 10)
                 
-            
             Pages(currentPage: $currentPage, hasControl: false) {
                 
                 
