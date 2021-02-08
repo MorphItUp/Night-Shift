@@ -40,14 +40,17 @@ struct ExploreView: View {
                     
                     
                     
-                    WallpaperView(category: "Nature", title: "Desert", description: "Some descriptive text about deserts").frame(height: 500)
+                    WallpaperView(image: "wallpaper", category: "Nature", title: "Desert", description: "Some descriptive text about deserts")
+                        .frame(height: 500)
+                        
                     
-                    WallpaperView(category: "Nature", title: "Desert", description: "Some descriptive text about deserts").frame(height: 500)
+                    WallpaperView(image: "wallpaper_red1", category: "Nature", title: "Desert", description: "Some descriptive text about deserts").frame(height: 500)
                     
-                    WallpaperView(category: "Nature", title: "Desert", description: "Some descriptive text about deserts").frame(height: 500)
+                    WallpaperView(image: "wallpaper_red2", category: "Nature", title: "Desert", description: "Some descriptive text about deserts").frame(height: 500)
                     
                 }
-                
+//                .padding([.leading,.trailing])
+//                .padding([.bottom],10)
                 
             }
             

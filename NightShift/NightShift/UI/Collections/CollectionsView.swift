@@ -16,7 +16,7 @@ struct CollectionsView: View {
             
             ScrollView {
 
-                Divider().padding([.leading, .trailing], 10).padding([.bottom], 20)
+                Divider().padding([.leading, .trailing], 10).padding([.bottom], 15)
 
                 CollectionPages(category: "Black")
                 CollectionPages(category: "White")
@@ -45,17 +45,12 @@ struct SingleCollectionView: View {
     var body: some View {
         
         VStack(alignment: .leading) {
-            Image(image)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(maxWidth: UIScreen.main.bounds.width * 0.93, maxHeight: 500)
+            ImageView(image: image)
                 .cornerRadius(30)
-                .shadow(color: .gray, radius: 7, x: 1, y: 3)
-                
+                .shadow(color: .gray, radius: 10, x: 1.0, y: 5.0)
+                .padding([.leading,.trailing])
+                .padding([.bottom],30)
         }
-        .padding(20)
-        .padding([.bottom, .top], 15)
-        
     }
     
 }
@@ -90,7 +85,8 @@ struct CollectionPages: View {
                 SingleCollectionView(image: "wallpaper_red3")
                 
                 
-            }.frame(height: 500, alignment: .center)
+            }
+            .frame(height: 500, alignment: .center)
             
         }
         

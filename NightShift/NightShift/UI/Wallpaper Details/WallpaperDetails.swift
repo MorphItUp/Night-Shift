@@ -9,15 +9,17 @@ import SwiftUI
 
 struct WallpaperDetails: View {
     
-    
+    var image: String
     
     var body: some View {
         
         
         VStack {
-            Image("wallpaper")
+            Image(image)
                 .resizable()
-                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.6, alignment: .top).cornerRadius(10)
+                .aspectRatio(contentMode: .fill)
+                .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height * 0.6)
+                .cornerRadius(10)
                 .padding([.bottom], 6)
             
             
@@ -44,7 +46,7 @@ struct WallpaperDetails: View {
 
 struct WallpaperDetails_Previews: PreviewProvider {
     static var previews: some View {
-        WallpaperDetails()
+        WallpaperDetails(image: "wallpaper")
     }
 }
 
